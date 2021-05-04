@@ -4,8 +4,6 @@
 
 byticular (as in bytes + particular) is a side project born out of one student's (mine) dissatisfaction with the ways in which coding tests are conducted in schools. It's meant to make it easier for instructors to assess students and for students to experience a means of being tested that goes beyond freestyle assignments.
 
----
-
 ## Dev Setup
 
 Follow these steps to recreate my setup:
