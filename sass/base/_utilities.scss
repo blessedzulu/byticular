@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+
+// ? Margin Top
+.u-mt-sm {
+  margin-top: $m-sm;
+}
+.u-mt-md {
+  margin-top: $m-md;
+}
+.u-mt-lg {
+  margin-top: $m-lg;
+}
+.u-mt-xl {
+  margin-top: $m-xl;
+}
+
+// ? Margin Right
+.u-mr-sm {
+  margin-right: $m-sm;
+}
+.u-mr-md {
+  margin-right: $m-md;
+}
+.u-mr-lg {
+  margin-right: $m-lg;
+}
+.u-mr-xl {
+  margin-right: $m-lg;
+}
+
+// ? Margin Bottom
+.u-mb-xs {
+  margin-bottom: $m-xs;
+}
+.u-mb-sm {
+  margin-bottom: $m-sm;
+}
+.u-mb-md {
+  margin-bottom: $m-md;
+}
+.u-mb-lg {
+  margin-bottom: $m-lg;
+}
+.u-mb-xl {
+  margin-bottom: $m-xl;
+}
+
+// ? Margin Left
+.u-ml-sm {
+  margin-left: $m-sm;
+}
+.u-ml-md {
+  margin-left: $m-md;
+}
+.u-ml-lg {
+  margin-left: $m-lg;
+}
+.u-ml-xl {
+  margin-left: $m-xl;
+}
+
+// ? POSITIONING
+.u-center-text {
+  text-align: center;
+}
+
+.u-text-italics {
+  font-style: italic;
+}
+
+// ? TESTING
+.u-test-bg {
+  background: $color-grey-light-2;
+}

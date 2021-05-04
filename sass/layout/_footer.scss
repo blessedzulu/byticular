@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.footer {
+  background: $color-dark;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+}

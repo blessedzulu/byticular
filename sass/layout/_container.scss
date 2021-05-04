@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.container {
+  &--hero {
+    margin-top: 20rem;
+
+    @include respond("tablet-portrait") {
+      margin-top: 15rem;
+    }
+  }
+
+  &--footer {
+    padding: $p-md;
+  }
+}

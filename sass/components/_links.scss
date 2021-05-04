@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}

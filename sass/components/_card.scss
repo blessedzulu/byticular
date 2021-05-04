@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.card {
+  // height: 50rem;
+  &--features {
+    padding: $p-md;
+    padding-top: 0;
+    @include box-shadow("sm", darken($color-light-1, 25%));
+    border: 2px solid rgba($color-grey-light-2, 0.5);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+
+    @include respond("tablet-portrait") {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      border-color: $color-primary;
+      transform: translateY(-5px);
+      @include box-shadow("sm", darken($color-light-1, 50%));
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 33%;
+    height: auto;
+
+    @include respond("tablet-portrait") {
+      width: 20%;
+    }
+  }
+}

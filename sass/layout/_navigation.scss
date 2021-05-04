@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: $m-xl;
+
+    &:not(:last-child) {
+      margin-right: $m-sm;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background: rgba($color-light-1, 0.85);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid rgba($color-grey-light-2, 0.5);
+  @include box-shadow("sm", darken($color-light-1, 15%));
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-box {
+    margin-left: $m-xl;
+  }
+
+  &__logo {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}

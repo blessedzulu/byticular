@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: $text-size-default;
+  color: $color-dark;
+}
+
+.heading {
+  font-weight: bold;
+
+  &--primary {
+    font-size: $heading-size-xl;
+  }
+
+  &--secondary {
+    font-size: $heading-size-lg;
+  }
+
+  &--tertiary {
+    font-size: $heading-size-md;
+  }
+
+  &--light {
+    color: $color-light-1;
+  }
+}
+
+.text {
+  &--sm {
+    font-size: $text-size-sm;
+  }
+
+  &--md {
+    font-size: $text-size-md;
+  }
+
+  &--lg {
+    font-size: $text-size-lg;
+  }
+
+  &--light {
+    color: $color-light-1;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+}

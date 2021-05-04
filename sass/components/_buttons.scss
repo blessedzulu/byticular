@@ -1,0 +1,47 @@
+@use "../abstracts" as *;
+
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  display: inline-block;
+  width: auto;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: inherit;
+  transition: all 0.25s ease;
+
+  &--primary {
+    border: 2px solid $color-primary;
+    background: $color-primary;
+    color: $color-light-1;
+
+    &:hover {
+      background: $color-light-1;
+      color: $color-dark;
+      @include box-shadow("sm", darken($color-primary, 10%));
+      transform: translateY(-2.5px);
+    }
+
+    &:active {
+      transform: translateY(-1.5px);
+    }
+  }
+
+  &--secondary {
+    border: 2px solid $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: white;
+    }
+  }
+
+  &--text {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
