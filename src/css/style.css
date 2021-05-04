@@ -160,28 +160,28 @@ body {
   text-decoration: none;
 }
 .btn--primary {
-  border: 2px solid #f96d00;
-  background: #f96d00;
+  border: 2px solid #0c9ef8;
+  background: #0c9ef8;
   color: #f9f9f9;
 }
 .btn--primary:hover {
   background: #f9f9f9;
   color: #041c24;
-  box-shadow: 0 1rem 2rem rgba(198, 87, 0, 0.25);
+  box-shadow: 0 1rem 2rem rgba(6, 128, 203, 0.25);
   transform: translateY(-2.5px);
 }
 .btn--primary:active {
   transform: translateY(-1.5px);
 }
 .btn--secondary {
-  border: 2px solid #f96d00;
+  border: 2px solid #0c9ef8;
 }
 .btn--secondary:hover {
-  background: #f96d00;
+  background: #0c9ef8;
   color: white;
 }
 .btn--text:hover {
-  color: #f96d00;
+  color: #0c9ef8;
 }
 @media only screen and (max-width: 56.25em) {
   .btn--submit {
@@ -204,7 +204,7 @@ body {
   }
 }
 .card--features:hover {
-  border-color: #f96d00;
+  border-color: #0c9ef8;
   transform: translateY(-5px);
   box-shadow: 0 1rem 2rem rgba(122, 122, 122, 0.25);
 }
@@ -243,22 +243,25 @@ body {
   border-radius: 2px;
   position: relative;
   margin-right: 1rem;
+  cursor: pointer;
   transition: all 0.25s ease;
 }
 .form__label--checkbox::after {
   content: "✓";
   font-weight: bold;
-  color: #f96d00;
+  color: #0c9ef8;
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -52.5%) scale(0.9);
+  transform: translate(-50%, -52.5%) scale(0.75);
   opacity: 0;
 }
 .form__input {
   display: block;
   width: 75%;
+  font-family: inherit;
+  color: inherit;
   padding: 1rem 2rem;
   border: 2px solid #a2abad;
   border-radius: 5px;
@@ -271,13 +274,13 @@ body {
 }
 .form__input:focus {
   outline: none;
-  border-color: #f96d00;
+  border-color: #0c9ef8;
 }
 .form__checkbox {
   display: none;
 }
 .form__checkbox:checked + .form__label--checkbox {
-  border-color: #f96d00;
+  border-color: #0c9ef8;
 }
 .form__checkbox:checked + .form__label--checkbox::after {
   opacity: 1;
@@ -285,6 +288,7 @@ body {
 
 ::placeholder {
   color: #677275;
+  font-family: inherit;
 }
 
 .hero__image-box {
@@ -309,16 +313,16 @@ body {
   color: inherit;
 }
 .link--highlighted:link, .link--highlighted:visited {
-  color: #f96d00;
+  color: #0c9ef8;
 }
 .link--highlighted:hover, .link--highlighted:active {
-  color: #f96d00;
+  color: #0c9ef8;
 }
 .link--light:link, .link--light:visited {
   color: #f9f9f9;
 }
 .link--light:hover, .link--light:active {
-  color: #f96d00;
+  color: #0c9ef8;
 }
 
 .testimonial {
@@ -484,6 +488,7 @@ body {
 .sign-up__image {
   transform: scale(1.5);
   height: 100%;
+  fill: #0c9ef8;
 }
 
 /*# sourceMappingURL=style.css.map */

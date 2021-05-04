@@ -25,6 +25,7 @@
       border-radius: 2px;
       position: relative;
       margin-right: $m-xs;
+      cursor: pointer;
 
       transition: all 0.25s ease;
 
@@ -36,7 +37,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -52.5%) scale(0.9);
+        transform: translate(-50%, -52.5%) scale(0.75);
         opacity: 0;
 
         // background: url(../img/icons/checkmark.svg);
@@ -47,6 +48,8 @@
   &__input {
     display: block;
     width: 75%;
+    font-family: inherit;
+    color: inherit;
 
     @include respond("tablet-portrait") {
       width: 100%;
@@ -78,4 +81,5 @@
 
 ::placeholder {
   color: $color-grey-dark-2;
+  font-family: inherit;
 }
