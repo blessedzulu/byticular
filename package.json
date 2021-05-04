@@ -4,7 +4,7 @@
   "description": "A platform for better coding tests.",
   "main": "index.html",
   "scripts": {
-    "devserver": "live-server",
+    "devserver": "live-server src/",
     "watch:sass": "sass src/sass/main.scss src/css/style.css -w",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass src/sass/style.scss src/css/style.comp.css",

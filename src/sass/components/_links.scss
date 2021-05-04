@@ -5,10 +5,30 @@
   &:visited {
     text-decoration: none;
     transition: all 0.25s ease;
+    color: inherit;
   }
 
-  &:hover,
-  &:active {
-    color: $color-primary;
+  &--highlighted {
+    &:link,
+    &:visited {
+      color: $color-primary;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  &--light {
+    &:link,
+    &:visited {
+      color: $color-light-1;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
   }
 }

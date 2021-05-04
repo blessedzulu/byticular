@@ -8,6 +8,7 @@
 
   display: inline-block;
   width: auto;
+  text-align: center;
   padding: 1rem 2rem;
   border-radius: 5px;
   color: inherit;
@@ -42,6 +43,12 @@
   &--text {
     &:hover {
       color: $color-primary;
+    }
+  }
+
+  &--submit {
+    @include respond("tablet-portrait") {
+      width: 100%;
     }
   }
 }
