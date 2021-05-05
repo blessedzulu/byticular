@@ -2,10 +2,11 @@
 
 .section {
   &--log-in {
-    margin-top: 15rem;
+    margin: 15rem 0;
 
     @include respond("tablet-portrait") {
-      margin-top: 10rem;
+      margin: 10rem 0;
+      margin-bottom: 5rem;
     }
   }
 }
