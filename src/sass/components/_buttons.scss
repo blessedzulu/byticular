@@ -9,13 +9,13 @@
   display: inline-block;
   width: auto;
   text-align: center;
-  padding: 1rem 2rem;
-  border-radius: 5px;
   color: inherit;
   transition: all 0.25s ease;
 
   &--primary {
+    padding: 1rem 2rem;
     border: 2px solid $color-primary;
+    border-radius: 5px;
     background: $color-primary;
     color: $color-light-1;
 
@@ -32,7 +32,9 @@
   }
 
   &--secondary {
+    padding: 1rem 2rem;
     border: 2px solid $color-primary;
+    border-radius: 5px;
 
     &:hover {
       background: $color-primary;

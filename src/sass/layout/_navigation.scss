@@ -3,14 +3,18 @@
 .nav {
   &__list {
     list-style: none;
+    margin-right: $m-xl;
     display: flex;
+    align-items: center;
   }
 
   &__item {
-    margin-right: $m-xl;
-
     &:not(:last-child) {
-      margin-right: $m-sm;
+      margin-right: $m-md;
+
+      @include respond("tablet-portrait") {
+        margin-right: $m-sm;
+      }
     }
   }
 }

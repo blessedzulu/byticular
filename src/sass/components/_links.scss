@@ -13,11 +13,6 @@
     &:visited {
       color: $color-primary;
     }
-
-    &:hover,
-    &:active {
-      color: $color-primary;
-    }
   }
 
   &--light {
@@ -25,10 +20,14 @@
     &:visited {
       color: $color-light-1;
     }
+  }
 
-    &:hover,
-    &:active {
-      color: $color-primary;
-    }
+  &:hover,
+  &:active,
+  &--highlighted:hover,
+  &--highlighted:active,
+  &--light:hover,
+  &--light:active {
+    color: $color-primary;
   }
 }
