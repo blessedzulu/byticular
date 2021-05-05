@@ -1,16 +1,16 @@
 @use "../abstracts" as *;
 
 .section {
-  &--sign-up {
-    margin: 15rem 0;
+  &--log-in {
+    margin-top: 15rem;
 
     @include respond("tablet-portrait") {
-      margin-top: 10rem 0;
+      margin-top: 10rem;
     }
   }
 }
 
-.sign-up {
+.log-in {
   &__image-box {
     width: 100%;
     height: 100%;

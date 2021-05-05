@@ -470,7 +470,12 @@ body {
 }
 
 .section--sign-up {
-  margin-top: 15rem;
+  margin: 15rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .section--sign-up {
+    margin-top: 10rem 0;
+  }
 }
 
 .sign-up__image-box {
@@ -486,6 +491,33 @@ body {
   }
 }
 .sign-up__image {
+  transform: scale(1.5);
+  height: 100%;
+  fill: #0c9ef8;
+}
+
+.section--log-in {
+  margin-top: 15rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section--log-in {
+    margin-top: 10rem;
+  }
+}
+
+.log-in__image-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .log-in__image-box {
+    display: none;
+  }
+}
+.log-in__image {
   transform: scale(1.5);
   height: 100%;
   fill: #0c9ef8;
