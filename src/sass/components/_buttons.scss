@@ -20,8 +20,8 @@
     color: $color-light-1;
 
     &:hover {
-      background: $color-light-1;
-      color: $color-dark;
+      background: darken($color-primary, 5%);
+      border-color: darken($color-primary, 5%);
       @include box-shadow("sm", darken($color-primary, 10%));
       transform: translateY(-2.5px);
     }

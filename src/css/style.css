@@ -171,8 +171,8 @@ body {
   color: #f9f9f9;
 }
 .btn--primary:hover {
-  background: #f9f9f9;
-  color: #041c24;
+  background: #0790e4;
+  border-color: #0790e4;
   box-shadow: 0 1rem 2rem rgba(6, 128, 203, 0.25);
   transform: translateY(-2.5px);
 }
