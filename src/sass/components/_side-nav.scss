@@ -1,0 +1,58 @@
+@use "../abstracts" as *;
+
+.side-nav {
+  flex: 0 0 20%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    display: flex;
+
+    &:last-child {
+      margin-left: 1rem;
+    }
+
+    &--sm {
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+  }
+
+  &__dropdown {
+    margin-left: 30%;
+
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-link {
+      font-size: $text-size-sm;
+    }
+  }
+}

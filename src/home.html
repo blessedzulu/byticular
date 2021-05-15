@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byticular – Coding Tests Modernised </title>
+
+  <!-- ? Import Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- ? Import Google Font -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;1,400&display=swap"
+    rel="stylesheet"> -->
+
+  <!-- ? Import Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ? HEADER -->
+  <header class="header">
+    <div class="header__logo-box">
+      <a class="link" href="index.html">
+        <svg class="logo logo--header">
+          <use xlink:href="img/icons/icons.svg#icon-logo" href="img/icons/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link link">
+            <div class="nav__notifications">
+              <div class="nav__icon-box">
+                <svg class="nav__icon">
+                  <use xlink:href="img/icons/icons.svg#icon-notification-bell"
+                    href="img/icons/icons.svg#icon-notification-bell"></use>
+                </svg>
+              </div>
+              <span class="nav__notification-count">7</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">
+            <div class="nav__user">
+              <img src="img/user-1.jpg" alt="User image" class="nav__user-image">
+              <p class="nav__user-name text">Blessed Zulu</p>
+              <svg class="nav__icon nav__icon--sm">
+                <use xlink:href="img/icons/icons.svg#icon-chevron-down" href="img/icons/icons.svg#icon-chevron-down">
+                </use>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="content">
+    <aside class="side-nav">
+      <ul class="side-nav__list">
+        <li class="side-nav__item">
+          <a href="" class="side-nav__link link link--active">
+            <svg class="side-nav__icon">
+              <use xlink:href="img/icons/icons.svg#icon-dashboard-stats" href="img/icons/icons.svg#icon-dashboard">
+              </use>
+            </svg>
+            <p class="text">Dashboard</p>
+          </a>
+        </li>
+        <li class="side-nav__item">
+          <a href="" class="side-nav__link link">
+            <svg class="side-nav__icon">
+              <use xlink:href="img/icons/icons.svg#icon-dashboard-stats" href="img/icons/icons.svg#icon-class"></use>
+            </svg>
+            <p class="text">Classes</p>
+            <svg class="side-nav__icon side-nav__icon--sm">
+              <use xlink:href="img/icons/icons.svg#icon-chevron-down" href="img/icons/icons.svg#icon-chevron-down">
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li class="side-nav__item--dropdown">
+          <div class="side-nav__dropdown">
+            <ul class="side-nav__dropdown-list">
+              <li class="side-nav__dropdown-item"><a href="#" class="side-nav__dropdown-link link">View All Classes</a>
+              </li>
+              <li class="side-nav__dropdown-item"><a href="#" class="side-nav__dropdown-link link">Create a Class</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- <li class="side-nav__item">
+          <a href="" class="side-nav__link link">
+            <svg class="side-nav__icon">
+              <use xlink:href="img/icons/icons.svg#icon-logout-wide" href="img/icons/icons.svg#icon-logout-wide">
+              </use>
+            </svg>
+            <p class="text">Logout</p>
+          </a>
+        </li> -->
+      </ul>
+    </aside>
+
+    <main class="content-view">
+
+      <!-- ?  RECENT TESTS SECTION -->
+      <section class="section section--recent-tests">
+        <div class="container container--recent-tests">
+          <div class="stats-header u-mb-sm">
+            <h2 class="heading heading--secondary">Recent Tests</h2>
+            <a href="#" class="btn btn--secondary">View All</a>
+          </div>
+
+          <div class="row">
+            <div class="col col-1-of-4">
+              <div class="card card--recent-tests">
+                <p class="text text--sm u-mb-xs">Object-Oriented Program...</p>
+                <h3 class="heading heading--tertiary u-mb-xs">Practical Test 1</h3>
+                <div class="test-date u-mb-sm">
+                  <div class="test-date__day">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-calendar" href="img/icons/icons.svg#icon-calendar">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">21 July</p>
+                  </div>
+                  <div class="test-date__time">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-clock" href="img/icons/icons.svg#icon-clock">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">16:00</p>
+                  </div>
+                </div>
+                <div class="test-stats">
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value">52</p>
+                    <svg class="test-stats__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-people" href="img/icons/icons.svg#icon-people">
+                      </use>
+                    </svg>
+                  </div>
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--max">74%</p>
+                    <span class="text text--sm test-stats__subtext test-stats__subtext--max">max</span>
+                  </div>
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--avg">51%</p>
+                    <span class="text text--sm test-stats__subtext test-stats__subtext--avg">avg</span>
+                  </div>
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--min">36%</p>
+                    <span class="text text--sm test-stats__subtext test-stats__subtext--min">min</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Review</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-1-of-4">
+              <div class="card card--recent-tests">
+                <p class="text text--sm u-mb-xs">Interactive Web Design</p>
+                <h3 class="heading heading--tertiary u-mb-xs">Weekly Quiz</h3>
+                <div class="test-date u-mb-sm">
+                  <div class="test-date__day">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-calendar" href="img/icons/icons.svg#icon-calendar">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">19 July</p>
+                  </div>
+                  <div class="test-date__time">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-clock" href="img/icons/icons.svg#icon-clock">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">14:00</p>
+                  </div>
+                </div>
+                <div class="test-stats">
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--no-stats">No Statistics</p>
+                    <span class="text text--sm test-stats__subtext">Grade test to see stats</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Grade</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-1-of-4">
+              <div class="card card--recent-tests">
+                <p class="text text--sm u-mb-xs">Data Structures</p>
+                <h3 class="heading heading--tertiary u-mb-xs">Mid-term Test</h3>
+                <div class="test-date u-mb-sm">
+                  <div class="test-date__day">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-calendar" href="img/icons/icons.svg#icon-calendar">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">15 July</p>
+                  </div>
+                  <div class="test-date__time">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-clock" href="img/icons/icons.svg#icon-clock">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">22:00</p>
+                  </div>
+                </div>
+                <div class="test-stats">
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--no-stats">No Statistics</p>
+                    <span class="text text--sm test-stats__subtext">Grade test to see stats</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Grade</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col col-1-of-4">
+              <div class="card card--recent-tests">
+                <p class="text text--sm u-mb-xs">Introduction to Program...</p>
+                <h3 class="heading heading--tertiary u-mb-xs">Mid-term Quiz</h3>
+                <div class="test-date u-mb-sm">
+                  <div class="test-date__day">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-calendar" href="img/icons/icons.svg#icon-calendar">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">10 July</p>
+                  </div>
+                  <div class="test-date__time">
+                    <svg class="test-date__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-clock" href="img/icons/icons.svg#icon-clock">
+                      </use>
+                    </svg>
+                    <p class="text text--sm">12:00</p>
+                  </div>
+                </div>
+                <div class="test-stats">
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value">124</p>
+                    <svg class="test-stats__icon">
+                      <use xlink:href="img/icons/icons.svg#icon-people" href="img/icons/icons.svg#icon-people">
+                      </use>
+                    </svg>
+                  </div>
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--max">93%</p>
+                    <span class="text text--sm test-stats__subtext test-stats__subtext--max">max</span>
+                  </div>
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--avg">67%</p>
+                    <span class="text text--sm test-stats__subtext test-stats__subtext--avg">avg</span>
+                  </div>
+                  <div class="test-stats__box">
+                    <p class="text text test-stats__value test-stats__value--min">15%</p>
+                    <span class="text text--sm test-stats__subtext test-stats__subtext--min">min</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Review</a>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- Row -->
+
+        </div> <!-- Container -->
+      </section>
+
+      <section class="section section--class-stats">
+        <div class="container container--class-stats">
+          <div class="stats-header u-mb-sm">
+            <h2 class="heading heading--secondary">Class Statistics</h2>
+            <a href="#" class="btn btn--secondary">View All</a>
+          </div>
+
+          <div class="row">
+            <div class="col col-1-of-3">
+              <div class="card card--class-stats">
+                <h3 class="heading heading--tertiary u-mb-md">Cloud Computing</h3>
+
+                <div class="class-stats">
+                  <div class="class-stats__box">
+                    <p class="text text class-stats__value">58</p>
+                    <span class="text text--sm class-stats__subtext">Students</span>
+                  </div>
+                  <div class="class-stats__box">
+                    <p class="text text class-stats__value">0</p>
+                    <span class="text text--sm class-stats__subtext">Tests</span>
+                  </div>
+                  <div class="class-stats__box">
+                    <div class="class-stats__group">
+                      <p class="text text class-stats__value class-stats__value--no-stats">No Data</p>
+                    </div>
+                    <span class="text text--sm class-stats__subtext class-stats__subtext--avg">Class Average</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Manage</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-1-of-3">
+              <div class="card card--class-stats">
+                <h3 class="heading heading--tertiary u-mb-md">Interactive Web Design</h3>
+
+                <div class="class-stats">
+                  <div class="class-stats__box">
+                    <p class="text text class-stats__value">120</p>
+                    <span class="text text--sm class-stats__subtext">Students</span>
+                  </div>
+                  <div class="class-stats__box">
+                    <p class="text text class-stats__value">8</p>
+                    <span class="text text--sm class-stats__subtext">Tests</span>
+                  </div>
+                  <div class="class-stats__box">
+                    <div class="class-stats__group">
+                      <p class="text text class-stats__value class-stats__value--avg">45%</p>
+                      <svg class="class-stats__icon class-stats__icon--down">
+                        <use xlink:href="img/icons/icons.svg#icon-people" href="img/icons/icons.svg#icon-arrow-down">
+                        </use>
+                      </svg>
+                    </div>
+                    <span class="text text--sm class-stats__subtext class-stats__subtext--avg">Class Average</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Manage</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-1-of-3">
+              <div class="card card--class-stats">
+                <h3 class="heading heading--tertiary u-mb-md">Object-Oriented Programming</h3>
+
+                <div class="class-stats">
+                  <div class="class-stats__box">
+                    <p class="text text class-stats__value">201</p>
+                    <span class="text text--sm class-stats__subtext">Students</span>
+                  </div>
+                  <div class="class-stats__box">
+                    <p class="text text class-stats__value">4</p>
+                    <span class="text text--sm class-stats__subtext">Tests</span>
+                  </div>
+                  <div class="class-stats__box">
+                    <div class="class-stats__group">
+                      <p class="text text class-stats__value class-stats__value--avg">53%</p>
+                      <svg class="class-stats__icon class-stats__icon--up">
+                        <use xlink:href="img/icons/icons.svg#icon-people" href="img/icons/icons.svg#icon-arrow-up">
+                        </use>
+                      </svg>
+                    </div>
+                    <span class="text text--sm class-stats__subtext class-stats__subtext--avg">Class Average</span>
+                  </div>
+                </div>
+                <div class="u-center-text u-mt-sm">
+                  <a href="#" class="btn btn--secondary">Manage</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div> <!-- Row -->
+
+        </div> <!-- Container -->
+      </section>
+
+    </main>
+  </div>
+
+
+
+  <!-- ? FOOTER -->
+  <footer class="footer">
+    <div class="container container--footer">
+      <div class="row">
+        <div class="col col-1-of-4">
+          <div class="footer__block">
+            <p class="text text--light text--bold u-mb-xs">Byticular</p>
+            <p class="text text--light">Programming tests &ndash; modernised</p>
+          </div>
+        </div>
+        <div class="col col-1-of-4">
+          <div class="footer__block">
+            <p class="text text--light text--bold u-mb-xs">Product</p>
+            <a href="#" class="link link--light u-mb-xs">All Features</a>
+            <a href="#" class="link link--light u-mb-xs">Contribute</a>
+            <a href="#" class="link link--light u-mb-xs">Support</a>
+          </div>
+        </div>
+        <div class="col col-1-of-4">
+          <div class="footer__block">
+            <p class="text text--light text--bold u-mb-xs">Connect</p>
+            <a href="mailto:blessedmattzulu@gmail.com" class="link link--light u-mb-xs">Email</a>
+            <a href="#" class="link link--light u-mb-xs">Twitter</a>
+          </div>
+        </div>
+        <div class="col col-1-of-4">
+          <div class="footer__block">
+            <p class="text text--light text--bold u-mb-xs">Legal</p>
+            <a href="#" class="link link--light u-mb-xs">Terms of Use</a>
+            <a href="#" class="link link--light u-mb-xs">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

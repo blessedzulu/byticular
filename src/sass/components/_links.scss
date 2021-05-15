@@ -30,4 +30,11 @@
   &--light:active {
     color: $color-primary;
   }
+
+  &--active {
+    border: 1px solid rgba($color-grey-light-2, 0.5);
+    border-radius: 5px;
+    @include box-shadow("sm", darken($color-light-1, 15%));
+    // font-weight: bold;
+  }
 }

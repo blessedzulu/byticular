@@ -1,0 +1,17 @@
+.section {
+  &--recent-tests,
+  &--class-stats {
+    margin: 4rem 0;
+  }
+}
+
+.content-view {
+  flex: 1;
+  padding-right: 4rem;
+}
+
+.stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

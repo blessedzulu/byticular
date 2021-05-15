@@ -2,24 +2,30 @@
 
 .card {
   // height: 50rem;
-  &--features {
-    padding: $p-md;
-    padding-top: 0;
-    @include box-shadow("sm", darken($color-light-1, 25%));
-    border: 2px solid rgba($color-grey-light-2, 0.5);
-    border-radius: 10px;
-    transition: all 0.25s ease;
+  padding: $p-md;
+  @include box-shadow("sm", darken($color-light-1, 25%));
+  border: 1px solid rgba($color-grey-light-2, 0.5);
+  border-radius: 10px;
+  background: lighten($color-light-1, 25%);
+  transition: all 0.25s ease;
 
+  &:hover {
+    border-color: $color-primary;
+    transform: translateY(-5px);
+    @include box-shadow("sm", darken($color-light-1, 50%));
+  }
+
+  &--features {
+    padding-top: 0;
     @include respond("tablet-portrait") {
       width: 80%;
       margin: 0 auto;
     }
+  }
 
-    &:hover {
-      border-color: $color-primary;
-      transform: translateY(-5px);
-      @include box-shadow("sm", darken($color-light-1, 50%));
-    }
+  &--recent-tests,
+  &--class-stats {
+    padding: $p-sm;
   }
 
   &__icon-box {
@@ -34,6 +40,106 @@
 
     @include respond("tablet-portrait") {
       width: 20%;
+    }
+  }
+}
+
+.test-date {
+  display: flex;
+
+  & > * {
+    display: flex;
+    align-items: center;
+  }
+
+  &__day {
+    margin-right: 2rem;
+  }
+
+  &__time {
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+.test-stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__value {
+    font-weight: bold;
+
+    &--no-stats {
+      color: $color-primary;
+    }
+
+    &--max {
+      color: $color-tertiary;
+    }
+
+    &--avg {
+      color: $color-primary;
+    }
+
+    &--min {
+      color: $color-secondary;
+    }
+  }
+
+  &__subtext {
+    &--max {
+      color: $color-tertiary;
+    }
+
+    &--avg {
+      color: $color-primary;
+    }
+
+    &--min {
+      color: $color-secondary;
+    }
+  }
+
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.class-stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__value {
+    font-weight: bold;
+    margin-right: 1rem;
+
+    &--no-stats {
+      color: $color-primary;
+    }
+  }
+
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    &--up {
+      color: $color-tertiary;
+    }
+
+    &--down {
+      color: $color-secondary;
     }
   }
 }
